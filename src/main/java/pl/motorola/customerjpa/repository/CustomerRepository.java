@@ -1,6 +1,7 @@
-package pl.motorola.customerjpa;
+package pl.motorola.customerjpa.repository;
 
 import org.springframework.data.repository.CrudRepository;
+import pl.motorola.customerjpa.entity.Customer;
 
 import java.util.List;
 

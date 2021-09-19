@@ -1,14 +1,13 @@
-package pl.motorola.customerjpa;
+package pl.motorola.customerjpa.entity;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import org.hibernate.annotations.Fetch;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Setter
@@ -16,9 +15,11 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @ToString
 public class Customer {
+
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     private String firstName;
     private String lastName;
 
